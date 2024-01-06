@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic calculator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body class="d-flex flex-column justify-content-center">
+    <main>
+      <section class="container box">
+        <h1>Basic Calculator</h1>
+        <form>
+          <div class="d-flex g-1">
+            <input type="number" name="display" id="display" readonly placeholder="0" class="form-control text-end" />
+            <button class="btn border text-danger" id="backButton" style="margin-left: 10px">&leftarrow;</button>
+          </div>
+          <ul class="buttons d-flex flex-column p-0 mt-2">
+            <div class="block d-flex gap-2 mt-1 mb-1">
+              <button class="btn text-info py-3 fw-bold w-100 border rounded-2" data-val="left-par">&lpar;</button>
+              <button class="btn text-info py-3 fw-bold w-100 border rounded-2" data-val="right-par">&rpar;</button>
+              <button class="btn text-info py-3 fw-bold w-100 border rounded-2 operator" data-val="%">%</button>
+              <button class="btn text-info py-3 fw-bold w-100 border rounded-2 operator" data-val="/">/</button>
+            </div>
+            <div class="block d-flex gap-2 mt-1 mb-1">
+              <button class="btn btn-light py-3 w-100 border rounded-2 calciNumber" data-val="7">7</button>
+              <button class="btn btn-light py-3 w-100 border rounded-2 calciNumber" data-val="8">8</button>
+              <button class="btn btn-light py-3 w-100 border rounded-2 calciNumber" data-val="9">9</button>
+              <button class="btn text-info py-3 fw-bold w-100 border rounded-2 operator" data-val="*">x</button>
+            </div>
+            <div class="block d-flex gap-2 mt-1 mb-1">
+              <button class="btn btn-light py-3 w-100 border rounded-2 calciNumber" data-val="4">4</button>
+              <button class="btn btn-light py-3 w-100 border rounded-2 calciNumber" data-val="5">5</button>
+              <button class="btn btn-light py-3 w-100 border rounded-2 calciNumber" data-val="6">6</button>
+              <button class="btn text-info py-3 fw-bold w-100 border rounded-2 operator" data-val="-">&minus;</button>
+            </div>
+            <div class="block d-flex gap-2 mt-1 mb-1">
+              <button class="btn btn-light py-3 w-100 border rounded-2 calciNumber" data-val="1">1</button>
+              <button class="btn btn-light py-3 w-100 border rounded-2 calciNumber" data-val="2">2</button>
+              <button class="btn btn-light py-3 w-100 border rounded-2 calciNumber" data-val="3">3</button>
+              <button class="btn text-info py-3 fw-bold w-100 border rounded-2 operator" data-val="+">&plus;</button>
+            </div>
+            <div class="block d-flex gap-2 mt-1 mb-1">
+              <button class="btn btn-light py-3 w-25 border rounded-2" data-val=".">.</button>
+              <button class="btn btn-light py-3 w-50 border rounded-2 calciNumber" data-val="0">0</button>
+              <button class="btn btn-primary py-3 w-25 border rounded-2 equals" data-val="=">&equals;</button>
+            </div>
+          </ul>
+        </form>
+      </section>
+    </main>
+    <script src="/src/app.js"></script>
+  </body>
+</html>
