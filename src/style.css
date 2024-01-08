@@ -1,19 +1,32 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-	height: 100vh;
+  height: 100vh;
 }
 
 ul,
 li {
-	list-style: none;
+  list-style: none;
 }
 
 .box {
-	width: 100%;
-	max-width: 40rem;
+  width: 100%;
+  max-width: 40rem;
+}
+
+.calciNumber {
+  font-weight: 600;
+}
+
+.uil-cancel::before {
+  scale: 1.2;
+  transform: rotate(180deg);
+}
+
+span {
+  font-size: 1.3rem;
 }
