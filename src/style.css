@@ -27,6 +27,7 @@ li {
   transform: rotate(180deg);
 }
 
-span {
-  font-size: 1.3rem;
+.operator,
+.delete.equals {
+  font-size: 1.2rem;
 }
